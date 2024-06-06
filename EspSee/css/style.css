@@ -1,0 +1,213 @@
+.modal{
+    background-color:#000!important;
+    border:1px solid #333;
+    padding:0px!important;
+    overflow:hidden;
+}
+
+.modal>form,.modal>div{
+    padding:15px 30px;
+}
+
+.modal a.close-modal {
+    top: 13px!important;
+    right: 13px!important;
+    width: 40px!important;
+    height: 40px!important;
+}
+
+.modal h4{
+    margin:0px;
+    padding:20px;
+    font-size:24px;
+    box-sizing:border-box;
+    background-color:#333;
+}
+
+.modal h4.red{
+    background-color:#300;
+}
+
+
+#camera_iframe{
+    display:inline-block;
+    width:80%;
+    height:100%;
+    min-height:500px;
+    vertical-align:top;
+    border:1px solid #000;
+}
+
+.cameras_list{
+    /*display:inline-block;*/
+    /*width:calc(20% - 10px);
+    vertical-align:top;*/
+}
+
+.camera_item{
+    /*width:100%;*/
+    padding:15px;
+    background-color:#000;
+    margin-bottom:10px;
+    border-radius:15px;
+    border-bottom:1px solid #444;
+}
+.camera_item:hover{
+    background-color:#111;
+    border-bottom:1px solid #666;
+}
+
+.camera_item.active{
+    border-bottom:1px solid #0a2;
+    box-shadow:0 0 5px #070;
+    background-color:#010;
+}
+.camera_item.active:hover{
+    border-bottom:1px solid #3f6;
+    box-shadow:0 0 5px #1c4;
+    background-color:#121;
+}
+.camera_item.inactive{
+    border-bottom:1px solid #a20;
+    box-shadow:0 0 5px #700;
+    background-color:#100;
+}
+.camera_item.inactive:hover{
+    border-bottom:1px solid #f41;
+    box-shadow:0 0 5px #c21;
+    background-color:#200;
+}
+
+.espsee_actions{
+    float:right;
+}
+
+.espsee_action_link{
+    margin-left:10px;
+}
+
+
+
+.camera_item a,.camera_item a:hover,.espsee_button_link,.espsee_button_link:hover{
+    text-decoration:none;
+    vertical-align:middle;
+    outline:none;
+    padding:10px;
+    background-color:#333;
+    border-radius:5px;
+}
+
+.espsee_page_actions{
+    height:50px;
+}
+
+.espsee_button_link:hover{
+    background-color:#353;
+}
+
+.camera_item a:hover{
+    background-color:#353;
+}
+
+.camera_item.inactive a{
+    background-color:#333;
+}
+
+.camera_item.inactive a:hover{
+    background-color:#533;
+}
+
+
+.camera_item a.red:hover{
+    background-color:#ff0000;
+}
+
+.camera_name{
+    display:inline-block;
+    margin-right:10px;
+    text-shadow:0 0 10px #000, 0 0 10px #000, 0 0 10px #000;
+}
+
+.camera_item.active::before, .camera_item.inactive::before{
+    content:"";
+    display:inline-block;
+    height:15px;
+    width:15px;
+    margin-right:10px;
+    border-radius:50%;
+    vertical-align:middle;
+    background-color:#33ff66;
+}
+.camera_item.inactive::before{
+    background-color:#ff6633;
+}
+
+code{
+    background-color:#444;
+    padding:3px;
+    border-radius:4px;
+    border:1px solid #555;
+}
+
+
+
+
+
+#espsee_footer{
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    padding:5px;
+    font-size:12px;
+    text-align:center;
+    background-color:#000;
+    z-index:2;
+    border-top:1px solid #fff;
+    box-shadow:0 0 20px #000;
+}
+body.dark #espsee_footer{
+    border-top:1px solid #555;
+}
+#espsee_footer a{
+    text-decoration:none;
+    margin-left:5px;
+    margin-right:5px;
+    color:#ccc;
+}
+#espsee_footer a:hover{
+    text-decoration:dotted underline;
+}
+
+
+/*div[id^=kofi-widget-overlay-]{
+    bottom:30px;
+}*/
+div[id^=kofi-widget-overlay-] .floatingchat-container-wrap,
+div[id^=kofi-widget-overlay-] .floatingchat-container-wrap-mobi{
+    bottom:40px;
+}
+
+.wp-block-navigation-item{
+    padding: 5px 10px 5px 10px !important;
+    border-radius: 5px;
+}
+.wp-block-navigation-item.current-menu-item{
+    background-color: #444 !important;
+}
+.wp-block-navigation ul li a{
+    text-decoration:none!important;
+}
+
+a:focus{
+    outline:none;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item.current-menu-item{
+    background-color: #444 !important;
+    color:#fff!important;
+}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item{
+    padding: 5px 10px 5px 10px !important;
+    border-radius: 5px;
+}
