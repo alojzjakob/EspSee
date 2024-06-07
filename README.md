@@ -1,5 +1,6 @@
 ![Logo](https://github.com/alojzjakob/EspSee/assets/17972823/3219c134-cddb-4f32-b06e-7e2d64b2d088)
 
+---
 # EspSee
 EspSee is ESP32-CAM heartbeat listener and camera list plugin for WordPress.
 
