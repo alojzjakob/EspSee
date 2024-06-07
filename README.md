@@ -23,6 +23,8 @@ To enable External Heartbeat, under Edit Config -> Others tab, enter fields:
 - **Heartbeat receiver auth token** `xx-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
 - Then set **External Heartbeat Server enabled**
 
+Your auth token can be seen by clicking the add camera button.
+
 Heartbeat will be send every 30 (default) seconds. It will do a POST request to defined domain/URI (i.e. https://www.espsee.com/heartbeat/?token=[your_token]) with JSON body, containing useful information about your camera allowing this website to connect it to your user account and provide a way to easily access your camera(s) without the need for DDNS.
 
 If you want to have multiple cameras accessible from the same external IP (behind router) you might need to do port forwarding and set ports on EspSee camera entries accordingly.
