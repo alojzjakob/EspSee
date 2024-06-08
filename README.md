@@ -15,7 +15,7 @@ The plugin’s main purpose is to provide a camera hub, a space where all your c
 
 In short, it provides a way for you to keep track of your cameras behind routers with dynamic IP addresses, so you dont need to use DDNS services.
 
-To enable External Heartbeat, under Edit Config -> Others tab, enter fields:
+To enable External Heartbeat, access your camera web front end, then under Edit Config -> Others tab, enter fields:
 
 - **Heartbeat receiver domain or IP** `www.espsee.com`
 - **Heartbeat receiver URI** `/heartbeat/`
