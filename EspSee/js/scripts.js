@@ -90,25 +90,37 @@ function edit_camera_handler(){
                           camera_active='active';
                         }
                         
+                        var camera_iframe_link=`<a class="espsee_action_link disabled" href="#" title="Can't open HTTP camera in HTTPS website iframe. Use external link.">
+                                                    <i class="fa-regular fa-eye-slash"></i></a>`;
+                        
+                        if(response.data.cameraProtocol==='https://'){
+                            
+                            camera_iframe_link=`<a class="espsee_action_link" href="${espsee_site_url}/wp-content/plugins/EspSee/views/modal/camera_view.php?id=${response.data.id}" rel="modal:open">
+                                                    <i class="fa-regular fa-eye"></i></a>`;
+                        }
+                        
                         var new_html=`<div id="camera_${response.data.id}" class="camera_item ${camera_active}">
                                         
                                         <div class="espsee_actions">
+                                        
+                                          ${camera_iframe_link}
+                                        
+                                          <a class="espsee_action_link" href="${camera_address}" target="_blank">
+                                              <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        
                                           <a class="espsee_action_link" href="${espsee_site_url}/wp-content/plugins/EspSee/views/modal/camera_info.php?id=${response.data.id}" rel="modal:open">
-                                              <i class="fa fa-info-circle"></i>
-                                          </a>
+                                              <i class="fa-solid fa-circle-info"></i></a>
                                           <a class="espsee_action_link" href="${espsee_site_url}/wp-content/plugins/EspSee/views/modal/camera_edit.php?id=${response.data.id}" rel="modal:open">
-                                              <i class="fa fa-pencil"></i>
-                                          </a>
+                                              <i class="fa-solid fa-pencil"></i></a>
                                           <a class="espsee_action_link red" href="${espsee_site_url}/wp-content/plugins/EspSee/views/modal/camera_remove.php?id=${response.data.id}" rel="modal:open">
-                                              <i class="fa fa-trash"></i>
-                                          </a>
+                                              <i class="fa-solid fa-trash"></i></a>
                                         </div>
                                         
                                         <div class="camera_name">
                                           ${camera_name}
                                         </div>
                                         
-                                        <a href="${camera_address}" target="camera_iframe">
+                                        <a href="${camera_address}" target="_blank">
                                           ${camera_address}
                                         </a>
                                         
